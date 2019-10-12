@@ -2,7 +2,7 @@ FROM php:5.6-cli-stretch
 
 RUN apt-get update && apt-get install -y wget libc6 libgnutls30 libidn11 libnettle6 libpcre3 libpsl5 libuuid1 zlib1g libssl-dev git bash;
 
-RUN wget -O phpunit https://phar.phpunit.de/phpunit-5.phar \
+RUN wget --no-cache -O phpunit https://phar.phpunit.de/phpunit-5.phar \
     && chmod +x phpunit \
     && mv phpunit /usr/bin/phpunit;
 
