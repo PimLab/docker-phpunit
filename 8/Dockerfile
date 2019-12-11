@@ -1,6 +1,6 @@
-FROM php:7.3-cli-stretch
+FROM pimlab/composer:latest-php7.3
 
-RUN apt-get update && apt-get install -y wget libc6 libgnutls30 libidn11 libnettle6 libpcre3 libpsl5 libuuid1 zlib1g libssl-dev git bash;
+RUN apk update && apk add wget git bash;
 
 RUN wget --no-cache -O phpunit https://phar.phpunit.de/phpunit-8.phar \
     && chmod +x phpunit \

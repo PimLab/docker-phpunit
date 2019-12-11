@@ -12,8 +12,6 @@ Images are rebuild quarterly to use the possible newest version of PHPUnit.
 | latest | 8.5.0 | 7.3 | Will automatically switch to a newer Major Version of PHP Unit if available. |
 | 8 | 8.5.0 | 7.3 | Latest Major |
 | 7 | 7.5.18 | 7.1 | Support Until Feb. 7, 2020 |
-| 6 | 6.5.14 | 7.0 | EOL |
-| 5 | 5.7.27 | 5.6 | EOL |
 
 **EOL Versions are listed until sources are not longer available and will be deleted without any notification!**
 

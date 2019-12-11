@@ -1,6 +1,6 @@
-FROM php:%PHP_VERSION%-cli-stretch
+FROM pimlab/composer:latest-php%PHP_VERSION%
 
-RUN apt-get update && apt-get install -y wget libc6 libgnutls30 libidn11 libnettle6 libpcre3 libpsl5 libuuid1 zlib1g libssl-dev git bash;
+RUN apk update && apk add wget git bash;
 
 RUN wget --no-cache -O phpunit https://phar.phpunit.de/phpunit-%PHPUNIT_VERSION%.phar \
     && chmod +x phpunit \
