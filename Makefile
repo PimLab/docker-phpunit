@@ -51,6 +51,12 @@ clean:
 	    versions=(`echo $$index | sed $(PATTERN)`); \
 	    phpunit=$${versions[0]}; \
 	    rm -R ./$$phpunit; \
+	    if [ $$phpunit = $(PHP_UNIT_LATEST) ]; then \
+	        docker image rm phpunit:$$phpunit $(REPO_NAME):$$phpunit; \
+	        docker image rm phpunit:$$phpunit $(REPO_NAME):latest; \
+	    else \
+	        docker image rm phpunit:$$phpunit $(REPO_NAME):$$phpunit; \
+	    fi \
 	done \
 
 tag:
