@@ -1,5 +1,5 @@
-PHP_UNIT_LATEST = 8
-PHP_UNIT_VERSIONS = 8:7.3 7:7.1
+PHP_UNIT_LATEST = 9
+PHP_UNIT_VERSIONS = 9:7.4 8:7.3
 PATTERN = 's/:/\n/g'
 REPO_NAME = "pimlab/phpunit"
 

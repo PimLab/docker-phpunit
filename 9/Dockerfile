@@ -1,8 +1,8 @@
-FROM pimlab/composer:latest-php7.1
+FROM pimlab/composer:latest-php7.4
 
 RUN apk update && apk add wget git bash;
 
-RUN wget --no-cache -O phpunit https://phar.phpunit.de/phpunit-7.phar \
+RUN wget --no-cache -O phpunit https://phar.phpunit.de/phpunit-9.phar \
     && chmod +x phpunit \
     && mv phpunit /usr/bin/phpunit;
 
